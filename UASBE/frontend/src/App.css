@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #e5e5e5;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #5b8bd4;
+  color: white;
+  padding: 20px;
+  position: relative;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+}
+
+.sidebar button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sidebar button:not(.logout) {
+  background: white;
+  color: black;
+}
+
+.sidebar .logout {
+  position: absolute;
+  bottom: 20px;
+  right: 110px;
+  width: 80px;
+  background: rgb(238, 63, 63);
+  color: white;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  padding: 30px;
+}
+
+/* Card */
+.card {
+  background: white;
+  width: 400px;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.card.large {
+  width: 80%;
+}
+
+.card h3 {
+  text-align: center;
+}
+
+/* Form */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: none;
+  background: #e6e6e6;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: none;
+}
+
+/* Buttons */
+.btn-primary {
+  background: #5b8bd4;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-green {
+  background: green;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  margin-right: 5px;
+}
+
+.btn-red {
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  background: #f0f0f0;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}

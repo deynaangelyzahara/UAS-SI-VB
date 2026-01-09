@@ -1,0 +1,52 @@
+.card {
+  background: white;
+  padding: 30px;
+  width: 380px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #2e7d32;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1b5e20;
+}
+
+.logout {
+  background: #c62828;
+  margin-bottom: 15px;
+}
+
+.task {
+  padding: 10px;
+  margin-top: 10px;
+  background: #f1f8e9;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

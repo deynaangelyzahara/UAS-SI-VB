@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+/* ===== LOGIN PAGE ===== */
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #7dff8b, #1e8e3e);
+}
+
+.login-card {
+  background: white;
+  padding: 40px 30px;
+  width: 320px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.login-card h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background: #eaeaea;
+  font-size: 14px;
+}
+
+.login-card input:focus {
+  outline: none;
+}
+
+.login-card button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: #2ddc3a;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-card button:hover {
+  background: #c0c0c0;
+}
+
+/* ===== DASHBOARD (tetap bisa dipakai) ===== */
+
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: #2e7d32;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  background: #43a047;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.content {
+  flex: 1;
+  padding: 30px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout {
+  background: #c62828;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
