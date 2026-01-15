@@ -10,10 +10,10 @@ const app = express();
 
 // 2. Middleware Utama
 app.use(cors({
-  origin: 'https://uas-si-vb-83km.vercel.app',
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  origin: ["https://uas-si-vb-83km.vercel.app", "http://localhost:5173"],
+  methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
-})); 
+}));
 app.use(express.json()); 
 
 // 3. Daftar Endpoint API 
