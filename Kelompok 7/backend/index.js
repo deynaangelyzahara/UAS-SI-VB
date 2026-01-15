@@ -9,7 +9,11 @@ const transaksiRoutes = require('./routes/transaksiRoutes');
 const app = express();
 
 // 2. Middleware Utama
-app.use(cors()); 
+app.use(cors({
+  origin: 'https://uas-si-vb-83km.vercel.app',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+})); 
 app.use(express.json()); 
 
 // 3. Daftar Endpoint API 
