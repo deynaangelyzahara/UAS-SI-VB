@@ -18,12 +18,12 @@ const Dashboard = () => {
       const token = localStorage.getItem('token');
       if (!token) return navigate('/login');
       try {
-        const resSum = await axios.get(`${import.meta.env.VITE_API_URL}/api/transaksi/summary`, {
+        const resSum = await axios.get(`/api/transaksi/summary`, {
           headers: { Authorization: `Bearer ${token}` }
         });
 
         setSummary(resSum.data);
-        const resList = await axios.get(`${import.meta.env.VITE_API_URL}/api/transaksi`, {
+        const resList = await axios.get(`/api/transaksi`, {
           headers: { Authorization: `Bearer ${token}` }
         });
 
@@ -37,7 +37,7 @@ const Dashboard = () => {
       e.preventDefault();
       const token = localStorage.getItem('token');
       try {
-        await axios.post(`${import.meta.env.VITE_API_URL}/api/transaksi`, { ...formData, jumlah: parseInt(formData.jumlah) }, { headers: { Authorization: `Bearer ${token}` } });
+        await axios.post(`/api/transaksi`, { ...formData, jumlah: parseInt(formData.jumlah) }, { headers: { Authorization: `Bearer ${token}` } });
         window.location.reload();
       } catch (err) { console.error(err); }
     };
@@ -51,7 +51,7 @@ const Dashboard = () => {
     e.preventDefault();
     const token = localStorage.getItem('token');
     try {
-    await axios.put(`${import.meta.env.VITE_API_URL}/api/transaksi/${editData.id}`,
+    await axios.put(`/api/transaksi/${editData.id}`,
         { tipe: editData.tipe, kategori: editData.kategori, jumlah: parseInt(editData.jumlah), catatan: editData.catatan },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -65,7 +65,7 @@ const Dashboard = () => {
     if (!window.confirm("Hapus transaksi ini?")) return;
     const token = localStorage.getItem('token');
     try {
-      await axios.delete(`${import.meta.env.VITE_API_URL}/api/transaksi/${id}`, { headers: { Authorization: `Bearer ${token}` } });
+      await axios.delete(`/api/transaksi/${id}`, { headers: { Authorization: `Bearer ${token}` } });
       window.location.reload();
     } catch (err) { console.error(err); }
   };
