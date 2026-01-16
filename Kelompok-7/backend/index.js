@@ -2,15 +2,15 @@ const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
 
-const authRoutes = require('./routes/authRoutes');
-const transaksiRoutes = require('./routes/transaksiRoutes');
+const authRoutes = require('./src/routes/authRoutes');
+const transaksiRoutes = require('./src/routes/transaksiRoutes');
 
 const app = express();
 
 app.use(express.json());
 
 app.use(cors({
-  origin: 'https://uas-si-vb-83km.vercel.app',
+  origin: '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
@@ -27,4 +27,4 @@ app.get('/', (req, res) => {
   });
 });
 
-module.exports = app; // ✅ INI SAJA
+module.exports = app;
