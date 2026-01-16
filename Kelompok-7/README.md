@@ -2,7 +2,7 @@
 
 ## 👤 Anggota Kelompok 7
 1.  **Deyna Angeliawati Zahara**: 230660221032
-2.  **Diaj Erwin**: 230660221022
+2.  **Dian Erwin**: 230660221022
 3.  **Jajang Komara**: 230660221102
 4.  **Adrian Nugraha**
 
@@ -64,7 +64,7 @@ Jika ingin menjalankan proyek ini di komputer lokal:
 
 ---
 
-## Pembagian Tugas
+## 💻 Pembagian Tugas
 - **Deyna Angeliawati Z**: Database, Backend (full), Frontend (contribute), Deployment (contribute) dan Dokumentasi.
 - **Dian Erwin**: UI Design, Frontend (contribute), dan Frontend Integration.
 - **Jajang Komara**: Server Configuration, Deployment, dan Troubleshooting.
@@ -72,7 +72,7 @@ Jika ingin menjalankan proyek ini di komputer lokal:
 
 ---
 
-## Email dan Password akses login:
+## 🔐 Email dan Password akses login:
 - **230660221032@student.unsap.ac.id** PW: Deyna123
 - **230660221022@student.unsap.ac.id** PW: Dian123
 - **230660221102@student.unsap.ac.id** PW: Jajang123
